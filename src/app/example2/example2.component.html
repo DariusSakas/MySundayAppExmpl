@@ -1,0 +1,26 @@
+<h2>Example 2 component</h2>
+
+<p>{{ dogs }}</p>
+
+<ul>
+  <li *ngFor="let dog of dogs">{{ dog }}</li>
+</ul>
+
+<p *ngIf="showParagraph">
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, facilis.
+</p>
+<p>
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, facilis.
+</p>
+<p>
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, facilis.
+</p>
+<input
+  type="text"
+  id="dogname"
+  name="dogname"
+  #dogname
+  placeholder="Enter dog name"
+/>
+<button (click)="addDog(dogname.value)">Add dog</button>
+<hr />
